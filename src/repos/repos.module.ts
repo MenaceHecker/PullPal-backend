@@ -1,9 +1,11 @@
-import React from 'react'
+import { Module } from '@nestjs/common';
+import { ReposController } from './repos.controller'
+import { ReposService } from './repos.service'
+import { HttpModule } from '@nestjs/axios';
 
-const repos.module = () => {
-  return (
-    <div>repos.module</div>
-  )
-}
-
-export default repos.module
+@Module({
+  imports: [HttpModule],
+  controllers: [ReposController],
+  providers: [ReposService],
+})
+export class ReposModule {}
