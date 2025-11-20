@@ -3,6 +3,6 @@ import packageJson from '../package.json';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World This is a test print!';
+    return 'Test Print is done!';
   }
 }
